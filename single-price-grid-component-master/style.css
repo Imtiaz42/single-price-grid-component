@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+                /*******   375px     *********/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*::before,
+*a::after {
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem 1.5rem;
+font-size: 18px;
+font-family: 'Karla', sans-serif;
+background-color: hsl(204, 43%, 93%);
+
+}
+header{
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1{
+    color: hsl(179, 62%, 43%);
+}
+
+header h3{
+    color: hsl(71, 73%, 54%);
+    margin-top: 1rem;
+}
+header p{
+color: hsl(218, 22%, 67%);
+margin-top: 1rem;
+}
+/* header section ends here */
+
+/* first aricle section start here */
+
+.articles article:first-child {
+   background-color: hsl(179, 62%, 43%);
+   padding: 1rem;
+   color: hsl(204, 43%, 93%);
+}
+.articles article:first-child h3{
+    padding-top: 1rem;
+}
+.articles article:first-child h2{
+    padding-top: 1rem;
+}
+.articles article:first-child h2 span{
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(204, 43%, 93%);
+}
+.articles article:first-child h5{
+    padding-top: 0.4rem;
+}
+
+
+.articles article:first-child button{
+    width: 100%;
+    margin-top: 1.3rem;
+    background-color: hsl(71, 73%, 54%);
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    
+}
+/* second aricle starts here */
+.articles article:last-child{
+    background-color: hsl(179, 57%, 41%);
+    padding: 1rem;
+    color: hsl(204, 43%, 93%);
+
+}
+/* .articles article:last-child h3 {
+
+} */
+.articles article:last-child p {
+    margin-top: 1rem;
+    padding-right: 3rem;
+}
+
+footer{
+    margin-top: 1rem;
+}
+
+
+/* ***** media queries  ***** */
+
+@media (min-width:525px){
+    header{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    main{
+        height: 100vh;
+        max-width: 500px;
+    }
+    .articles article:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0rem 3rem;
+        height: 300px;
+    }
+
+    .articles article:last-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 2.5rem 1rem 4rem;
+        height: 300px;
+    }
+    .articles article:last-child h3{
+        margin-right: 3rem; /* for centering */
+    }
+}
+
+@media (min-width: 768px){
+    main{
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1080px){
+     .articles{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main{
+        max-width: 900px;
+    }
+    .articles article:last-child{
+        text-align: left;
+        padding-left: 3rem;
+        padding-right: 6rem;
+    }
+
+}
+
